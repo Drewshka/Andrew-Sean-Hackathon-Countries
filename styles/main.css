@@ -1,0 +1,199 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../assets/images/passport-gdfae568f8_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 3rem 0 3rem 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: beige;
+  padding: 20px;
+  width: 80vw;
+}
+@media (min-width: 768px) {
+  .header {
+    width: 40vw;
+  }
+}
+.header__title {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-family: "Arial";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    color: black;
+  }
+}
+.header__description {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  color: black;
+}
+
+.countries {
+  padding: 5px;
+  width: 88vw;
+  background-color: beige;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+@media (min-width: 768px) {
+  .countries {
+    width: 40vw;
+  }
+}
+.countries__header {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+  padding: 1rem 0;
+}
+@media (min-width: 768px) {
+  .countries__header {
+    font-family: "Arial";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    color: black;
+  }
+}
+
+.country__single {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.country__container {
+  margin: 2rem 0 0 0;
+}
+.country__flag {
+  height: 100px;
+  width: 50%;
+}
+.country__name {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+}
+.country__currency {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+}
+.country__capital {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+}
+.country__language {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+}
+.country__value {
+  font-weight: bold;
+  color: blue;
+}
+
+.form {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+}
+.form__header {
+  color: black;
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 20px;
+  color: black;
+  padding: 2rem;
+}
+.form label {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+  padding-bottom: 5px;
+}
+.form input {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.form__country {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+}
+.form__button {
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */

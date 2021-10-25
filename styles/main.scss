@@ -1,0 +1,168 @@
+@use "./partials/global" as *;
+@use "./partials/mixins" as *;
+@use "./partials/fonts" as *;
+@use "./partials/variables" as *;
+
+body {
+  background-image: url("../assets/images/passport-gdfae568f8_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 1rem;
+  @include tablet {
+    @include flex(row, space-evenly, baseline);
+  }
+  @include desktop {
+    @include flex(row, space-evenly, baseline);
+  }
+}
+
+.header {
+  @include flex(column, flex-start, flex-start);
+  margin: 3rem 0 3rem 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: beige;
+  padding: 20px;
+  width: 80vw;
+  @include tablet {
+    width: 40vw;
+  }
+
+  &__title {
+    @include font("Arial", 700, 20px, 20px, black);
+    padding-bottom: 1rem;
+    @include tablet {
+      @include font("Arial", 700, 30px, 20px, black);
+    }
+  }
+  &__description {
+    @include font("Arial", 500, 15px, 30px, black);
+  }
+}
+.countries {
+  padding: 5px;
+  // margin: 0 0 0 2rem;
+  width: 88vw;
+  background-color: beige;
+  border: 1px solid black;
+  border-radius: 4px;
+  @include tablet {
+    width: 40vw;
+  }
+
+  &__header {
+    @include font("Arial", 700, 20px, 20px, black);
+    padding: 1rem 0;
+    @include tablet {
+      @include font("Arial", 700, 30px, 20px, black);
+    }
+  }
+}
+.country {
+  &__single {
+    width: 100%;
+    min-height: 5rem;
+    @include flex(column, center, center);
+    padding-bottom: 1rem;
+  }
+
+  &__container {
+    margin: 2rem 0 0 0;
+  }
+
+  &__flag {
+    height: 100px;
+    width: 50%;
+  }
+
+  &__name {
+    @include font("Arial", 500, 20px, 20px, black);
+  }
+
+  &__currency {
+    @include font("Arial", 500, 20px, 20px, black);
+  }
+
+  &__capital {
+    @include font("Arial", 500, 20px, 20px, black);
+  }
+
+  &__language {
+    @include font("Arial", 500, 20px, 20px, black);
+  }
+
+  &__value {
+    font-weight: bold;
+    color: blue;
+  }
+}
+
+.form {
+  @include font("Arial", 500, 20px, 20px, black);
+  @include flex(column, center, inherit);
+  &__header {
+    color: black;
+    @include font("Arial", 500, 40px, 20px, black);
+    padding: 2rem;
+  }
+
+  label {
+    @include font("Arial", 500, 15px, 20px, black);
+    padding-bottom: 5px;
+  }
+
+  input {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__country {
+    @include font("Arial", 500, 20px, 20px, black);
+  }
+
+  &__button {
+    // width: 20rem;
+    padding: 10px;
+  }
+}
+// .content {
+//   @include flex(column, center, center);
+//   padding: 0 1rem 0 1rem;
+//   display: flex;
+//   align-items: center;
+//   position: relative;
+
+//   &__card {
+//     @include flex(column, center, center);
+//     position: absolute;
+//     top: 200px;
+//     left: 141px;
+
+//     background-color: black;
+//     &-header {
+//       color: goldenrod;
+//     }
+//     &-description {
+//       color: goldenrod;
+//     }
+//     &-selector {
+//       color: goldenrod;
+//     }
+//   }
+// }
+
+// .information {
+//   @include flex(column, center, center);
+//   &__currency {
+//     @include font("Arial", 500, 20px, 20px, black);
+//     padding-bottom: 5px;
+//   }
+//   &__language {
+//     @include font("Arial", 500, 20px, 20px, black);
+//     padding-bottom: 5px;
+//   }
+//   &__capital {
+//     @include font("Arial", 500, 20px, 20px, black);
+//   }
+// }
